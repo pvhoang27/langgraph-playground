@@ -41,3 +41,6 @@ for age in [25, 10]:
     print(f"--- age = {age} ---")
     for step in graph.stream({"name": "Hai", "age": age}):
         print(step)
+
+
+print(graph.get_graph().draw_mermaid())
